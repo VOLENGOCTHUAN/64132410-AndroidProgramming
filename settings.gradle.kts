@@ -22,4 +22,7 @@ dependencyResolutionManagement {
 rootProject.name = "AppCong"
 include(":app")
 include(":app")
+include(":app")
+include(":app")
+include(":app")
  
