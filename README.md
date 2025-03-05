@@ -26,6 +26,8 @@
     <td>
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VOLENGOCTHUAN&bg_color=FFFFFF00&text_color=179fa3&layout=compact&hide=CSS&langs_count=10&custom_title=Top%20ngôn%20ngữ%20được%20dùng" alt="VOLENGOCTHUAN" width="50%"/>
       <img src="https://github-readme-stats.vercel.app/api?username=VOLENGOCTHUAN&bg_color=FFFFFF00&text_color=179fa3&show_icons=true&count_private=true&include_all_commits=true&custom_title=Hoạt%20động%20trên%20Github" alt="VOLENGOCTHUAN" width="50%"/>
+      <img src="https://th.bing.com/th/id/R.0e96d46a5b0747fd69bd661fcd945568?rik=xcrp0iOWufW20w&pid=ImgRaw&r=0" alt="dev" width="40%"/>
+        <img src="https://media.tenor.com/ZPHHiCRxrlsAAAAj/happy-happy-happy-cat.gif" alt="dev" width="40%"/>
     </td>
      </tr>
 </table>
