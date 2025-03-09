@@ -1,4 +1,4 @@
-package tiil.edu.vd2;
+package tiil.edu.ex5_addsubmuldiv_anynomous;
 
 import android.os.Bundle;
 import android.view.View;
