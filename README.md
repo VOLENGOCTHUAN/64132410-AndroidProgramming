@@ -59,3 +59,10 @@
   <img style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);" src="https://cultofthepartyparrot.com/parrots/explodyparrot.gif">
  </p>
 </table>
+
+## Sources code thực hành
+<h2> Ex1: Hello Android </h2>
+<p align="center">
+  <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="Hello Android">
+    <img src="images/1.jpg" width="900px" height= "500px"/>
+  </a> 
