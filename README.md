@@ -61,9 +61,27 @@
 </table>
 
 ## Sources code thực hành
-<h2> <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="Hello Android">Ex2: LinearLayout</a> </h2>
-
+<h2>Ex1: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="Hello Android">Hello Android</a>  </h2>
 <p align="center">
   <img src="images/1.jpg" width="900px" height="500px"/>
 </p> 
-
+<h2>Ex2: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="LinearLayout">LinearLayout</a>  </h2>
+<p align="center">
+  <img src="images/1.jpg" width="900px" height="500px"/>
+</p> 
+<h2>Ex3: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="SimpleSumApp">SimpleSumApp</a>  </h2>
+<p align="center">
+  <img src="images/1.jpg" width="900px" height="500px"/>
+</p> 
+<h2>Ex4: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="AddSubMulDiv_Onclick">AddSubMulDiv_Onclick</a>  </h2>
+<p align="center">
+  <img src="images/1.jpg" width="900px" height="500px"/>
+</p> 
+<h2>Ex5: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="AddSubMulDiv_Anynomous">AddSubMulDiv_Anynomous</a>  </h2>
+<p align="center">
+  <img src="images/1.jpg" width="900px" height="500px"/>
+</p> 
+<h2>Ex5: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="AddSubMulDiv_Var">AddSubMulDiv_Var</a>  </h2>
+<p align="center">
+  <img src="images/1.jpg" width="900px" height="500px"/>
+</p> 
