@@ -61,8 +61,9 @@
 </table>
 
 ## Sources code thực hành
-<h2> Ex1: Hello Android </h2>
+<h2> <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="Hello Android">Ex2: LinearLayout</a> </h2>
+
 <p align="center">
-  <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="Hello Android">
-    <img src="images/1.jpg" width="900px" height= "500px"/>
-  </a> 
+  <img src="images/1.jpg" width="900px" height="500px"/>
+</p> 
+
