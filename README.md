@@ -72,10 +72,14 @@
 <h2>Ex3: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="SimpleSumApp">SimpleSumApp</a>  </h2>
 <p align="center">
   <img src="images/SimpleSumApp.jpg" width="900px" height="500px"/>
+  <img src="images/SimpleSumApp1.jpg" width="900px" height="500px"/>
 </p> 
 <h2>Ex4: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="AddSubMulDiv_Onclick">AddSubMulDiv_Onclick</a>  </h2>
 <p align="center">
   <img src="images/AddSubMulDiv_Onclick.jpg" width="900px" height="500px"/>
+  <img src="images/AddSubMulDiv_Onclick1.jpg" width="900px" height="500px"/>
+  <img src="images/AddSubMulDiv_Onclick2.jpg" width="900px" height="500px"/>
+  <img src="images/AddSubMulDiv_Onclick3.jpg" width="900px" height="500px"/>
 </p> 
 <h2>Ex5: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="AddSubMulDiv_Anynomous">AddSubMulDiv_Anynomous</a>  </h2>
 <p align="center">
