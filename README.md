@@ -89,3 +89,7 @@
 <p align="center">
   <img src="images/AddSubMulDiv_Var.jpg" width="900px" height="500px"/>
 </p> 
+<h2>Ex6: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/LoginPage" alt="AddSubMulDiv_Var">LoginPage</a>  </h2>
+<p align="center">
+  <img src="images/LoginPage1.jpg" width="900px" height="500px"/>
+</p> 
