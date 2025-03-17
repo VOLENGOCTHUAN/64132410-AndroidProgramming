@@ -59,3 +59,33 @@
   <img style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);" src="https://cultofthepartyparrot.com/parrots/explodyparrot.gif">
  </p>
 </table>
+
+## Sources code thực hành
+<h2>Ex1: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="Hello Android">Hello Android</a>  </h2>
+<p align="center">
+  <img src="images/1.jpg" width="900px" height="500px"/>
+</p> 
+<h2>Ex2: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/Ex2_LinearLayout" alt="LinearLayout">LinearLayout</a>  </h2>
+<p align="center">
+  <img src="images/LinearLayout.jpg" width="900px" height="500px"/>
+</p> 
+<h2>Ex3: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/AppCong" alt="SimpleSumApp">SimpleSumApp</a>  </h2>
+<p align="center">
+  <img src="images/SimpleSumApp.png" width="900px" height="500px"/>
+  <img src="images/SimpleSumApp1.png" width="900px" height="500px"/>
+</p> 
+<h2>Ex4: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/VD2" alt="AddSubMulDiv_Onclick">AddSubMulDiv_Onclick</a>  </h2>
+<p align="center">
+  <img src="images/AddSubMulDiv_Onclick.png" width="900px" height="500px"/>
+  <img src="images/AddSubMulDiv_Onclick1.png" width="900px" height="500px"/>
+  <img src="images/AddSubMulDiv_Onclick2.png" width="900px" height="500px"/>
+  <img src="images/AddSubMulDiv_Onclick3.png" width="900px" height="500px"/>
+</p> 
+<h2>Ex5: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="AddSubMulDiv_Anynomous">AddSubMulDiv_Anynomous</a>  </h2>
+<p align="center">
+  <img src="images/AddSubMulDiv_Anynomous.jpg" width="900px" height="500px"/>
+</p> 
+<h2>Ex5: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="AddSubMulDiv_Var">AddSubMulDiv_Var</a>  </h2>
+<p align="center">
+  <img src="images/AddSubMulDiv_Var.jpg" width="900px" height="500px"/>
+</p> 
