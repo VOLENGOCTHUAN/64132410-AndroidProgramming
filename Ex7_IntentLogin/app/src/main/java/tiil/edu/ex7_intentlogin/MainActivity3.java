@@ -22,8 +22,8 @@ public class MainActivity3 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        Intent intentTuLogin = getIntent();
-        String tenDN_NhanDuoc = intentTuLogin.getStringExtra("username");
+        Intent login = getIntent();
+        String tenDN_NhanDuoc = login.getStringExtra("username");
         TextView tvUserName = (TextView) findViewById(R.id.tvUserName);
         tvUserName.setText(tenDN_NhanDuoc);
     }
