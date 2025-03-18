@@ -76,8 +76,6 @@
 </p> 
 <h2>Ex4: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/VD2" alt="AddSubMulDiv_Onclick">AddSubMulDiv_Onclick</a>  </h2>
 <p align="center">
-  <img src="images/AddSubMulDiv_Onclick.png" width="900px" height="500px"/>
-  <img src="images/AddSubMulDiv_Onclick1.png" width="900px" height="500px"/>
   <img src="images/AddSubMulDiv_Onclick2.png" width="900px" height="500px"/>
   <img src="images/AddSubMulDiv_Onclick3.png" width="900px" height="500px"/>
 </p> 
@@ -95,7 +93,8 @@
 </p> 
 <h2>Ex6: <a href="" alt="AddSubMulDiv_Var">IntentDonGian</a>  </h2>
 <p align="center">
-  <img src="images/.jpg" width="900px" height="500px"/>
+  <img src="images/IntentDonGian.jpg" width="900px" height="500px"/>
+  <img src="images/IntentDonGian1.jpg" width="900px" height="500px"/>
 </p> 
 <h2>Ex7: <a href="" alt="AddSubMulDiv_Var">IntentLogin</a>  </h2>
 <p align="center">
