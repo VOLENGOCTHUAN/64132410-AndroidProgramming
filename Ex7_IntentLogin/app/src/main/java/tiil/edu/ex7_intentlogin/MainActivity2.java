@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,15 +36,18 @@ EditText password,username,email;
         xacnhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(username.getText().toString().equals("VoLeNgocThuan-64CNTT3") && password.getText().toString().equals("123") && email.getText().toString().equals("thuan.vln.64cntt@ntu.edu.vn")){
+                if(username.getText().toString().equals("volengocthuan") && password.getText().toString().equals("123") && email.getText().toString().equals("thuan.vln.64cntt@ntu.edu.vn")){
                     Intent in = new Intent(MainActivity2.this, MainActivity3.class);
+                    in.putExtra("username", "volengocthuan");
+                    in.putExtra("password", "123");
+                    in.putExtra("email", "thuan.vln.64cntt@ntu.edu.vn");
                     startActivity(in);
                 }
                 else{
                     username.setError("Sai tên đăng nhập");
                     password.setError("Sai mật khẩu");
                     email.setError("Sai email");
-
+                    Toast.makeText(MainActivity2.this, "Sai tên đăng nhập, mật khẩu hoac email", Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -2,6 +2,7 @@ package tiil.edu.ex7_intentlogin;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,6 +23,8 @@ public class MainActivity3 extends AppCompatActivity {
             return insets;
         });
         Intent intentTuLogin = getIntent();
-        intentTuLogin.getStringExtra("");
+        String tenDN_NhanDuoc = intentTuLogin.getStringExtra("username");
+        TextView tvUserName = (TextView) findViewById(R.id.tvUserName);
+        tvUserName.setText(tenDN_NhanDuoc);
     }
 }

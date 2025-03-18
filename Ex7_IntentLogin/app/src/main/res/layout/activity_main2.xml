@@ -74,6 +74,7 @@
             android:layout_height="56dp"
             android:layout_marginTop="215dp"
             android:text="Email:" />
+
         <Button
             android:id="@+id/btnXacNhan"
             android:layout_width="wrap_content"
@@ -88,9 +89,12 @@
         android:id="@+id/textView"
         android:layout_width="341dp"
         android:layout_height="102dp"
+        android:layout_marginTop="232dp"
         android:text="ĐĂNG NHẬP HỆ THỐNG"
         android:textColor="#D76440"
         android:textSize="30dp"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="245dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
