@@ -98,5 +98,7 @@
 </p> 
 <h2>Ex7: <a href="" alt="AddSubMulDiv_Var">IntentLogin</a>  </h2>
 <p align="center">
-  <img src="images/.jpg" width="900px" height="500px"/>
+  <img src="images/IntentLogin.png" width="900px" height="500px"/>
+  <img src="images/IntentLogin1.png" width="900px" height="500px"/>
+  <img src="images/IntentLogin2.png" width="900px" height="500px"/>
 </p> 
