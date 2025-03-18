@@ -81,11 +81,11 @@
   <img src="images/AddSubMulDiv_Onclick2.png" width="900px" height="500px"/>
   <img src="images/AddSubMulDiv_Onclick3.png" width="900px" height="500px"/>
 </p> 
-<h2>Ex5: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="AddSubMulDiv_Anynomous">AddSubMulDiv_Anynomous</a>  </h2>
+<h2>Ex5: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/Ex5_AddSubMulDiv_Anynomous" alt="AddSubMulDiv_Anynomous">AddSubMulDiv_Anynomous</a>  </h2>
 <p align="center">
   <img src="images/AddSubMulDiv_Anynomous.jpg" width="900px" height="500px"/>
 </p> 
-<h2>Ex5: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/HelloAndroid" alt="AddSubMulDiv_Var">AddSubMulDiv_Var</a>  </h2>
+<h2>Ex5: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/Ex5_AddSubMulDiv_Var" alt="AddSubMulDiv_Var">AddSubMulDiv_Var</a>  </h2>
 <p align="center">
   <img src="images/AddSubMulDiv_Var.jpg" width="900px" height="500px"/>
 </p> 
