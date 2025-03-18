@@ -91,7 +91,7 @@
 <p align="center">
   <img src="images/LoginPage1.jpg" width="900px" height="500px"/>
 </p> 
-<h2>Ex6: <a href="" alt="AddSubMulDiv_Var">IntentDonGian</a>  </h2>
+<h2>Ex6: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/Ex6_IntentDonGian" alt="AddSubMulDiv_Var">IntentDonGian</a>  </h2>
 <p align="center">
   <img src="images/IntentDonGian.jpg" width="900px" height="500px"/>
   <img src="images/IntentDonGian1.jpg" width="900px" height="500px"/>
