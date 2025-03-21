@@ -96,7 +96,9 @@
   <img src="images/IntentDonGian.jpg" width="900px" height="500px"/>
   <img src="images/IntentDonGian1.jpg" width="900px" height="500px"/>
 </p> 
-<h2>Ex7: <a href="" alt="AddSubMulDiv_Var">IntentLogin</a>  </h2>
+<h2>Ex7: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/Ex7_IntentLogin" alt="AddSubMulDiv_Var">IntentLogin</a>  </h2>
 <p align="center">
-  <img src="images/.jpg" width="900px" height="500px"/>
+  <img src="images/IntentLogin.png" width="900px" height="500px"/>
+  <img src="images/IntentLogin1.png" width="900px" height="500px"/>
+  <img src="images/IntentLogin2.png" width="900px" height="500px"/>
 </p> 
