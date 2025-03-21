@@ -102,3 +102,8 @@
   <img src="images/IntentLogin1.png" width="900px" height="500px"/>
   <img src="images/IntentLogin2.png" width="900px" height="500px"/>
 </p> 
+
+<h2>Ex8: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/Landing%20page%20Figma" alt="AddSubMulDiv_Var">Landing page Figma</a>  </h2>
+<p align="center">
+  <img src="images/TextFigma.jpg" width="900px" height="500px"/>
+</p> 
