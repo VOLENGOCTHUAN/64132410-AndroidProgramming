@@ -36,12 +36,13 @@ public class MainActivity2 extends AppCompatActivity {
         dangnhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(username.getText().toString().equals("volengocthuan") && password.getText().toString().equals("123") && email.getText().toString().equals("thuan.vln.64cntt@ntu.edu.vn")){
+                if(username.getText().toString().equals("Vo Le Ngoc Thuan") && password.getText().toString().equals("123456") && email.getText().toString().equals("thuan.vln.64cntt@ntu.edu.vn")){
                     Intent in = new Intent(MainActivity2.this, MainActivity3.class);
-                    in.putExtra("username", "volengocthuan");
-                    in.putExtra("password", "123");
+                    in.putExtra("username", "Vo Le Ngoc Thuan");
+                    in.putExtra("password", "123456");
                     in.putExtra("email", "thuan.vln.64cntt@ntu.edu.vn");
                     startActivity(in);
+                    finish();
                 }
                 else{
                     username.setError("Sai tên đăng nhập");

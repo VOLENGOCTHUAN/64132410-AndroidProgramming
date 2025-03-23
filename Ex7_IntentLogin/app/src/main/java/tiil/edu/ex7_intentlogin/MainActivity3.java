@@ -11,7 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity3 extends AppCompatActivity {
-
+TextView tvUserName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,9 +22,10 @@ public class MainActivity3 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        tvUserName = findViewById(R.id.tvUserName);
+
         Intent login = getIntent();
         String tenDN_NhanDuoc = login.getStringExtra("username");
-        TextView tvUserName = (TextView) findViewById(R.id.tvUserName);
         tvUserName.setText(tenDN_NhanDuoc);
     }
 }

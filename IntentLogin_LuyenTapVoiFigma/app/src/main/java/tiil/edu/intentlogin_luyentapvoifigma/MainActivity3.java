@@ -35,6 +35,12 @@ TextView tennguoidung;
         anh4=findViewById(R.id.btn4);
         tennguoidung = findViewById(R.id.edtUserName);
 
+        Intent login = getIntent();
+        String ten = login.getStringExtra("username");
+
+        tennguoidung.setText(ten);
+
+
         anh1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,10 +65,5 @@ TextView tennguoidung;
                 Toast.makeText(MainActivity3.this, "KẾT QUẢ SAI, VUI LÒNG CHỌN LẠI", Toast.LENGTH_SHORT).show();
             }
         });
-
-        Intent tam1 = getIntent();
-        String ten = tam1.getStringExtra("UserName");
-
-        tennguoidung.setText(ten);
     }
 }
