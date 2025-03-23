@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:text="QUIZZ"
+        android:textColor="#FF5722"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="XIN CHÀO"
+        android:textColor="#673AB7"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text=""
+        android:textColor="#3F51B5"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="1dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="50dp"
+        app:cardMaxElevation="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="30dp"
+            android:id="@+id/imageView"
+            android:layout_width="86dp"
+            android:layout_height="80dp"
+            android:background="@drawable/anh1" />
+
+        <ImageView
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="220dp"
+            android:id="@+id/imageView2"
+            android:layout_width="86dp"
+            android:layout_height="80dp"
+            android:background="@drawable/anh2" />
+
+        <ImageView
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="210dp"
+            android:id="@+id/imageView3"
+            android:layout_width="86dp"
+            android:layout_height="80dp"
+            android:background="@drawable/anh3" />
+
+        <ImageView
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="210dp"
+            android:id="@+id/imageView4"
+            android:layout_width="86dp"
+            android:layout_height="80dp"
+            android:background="@drawable/anh4" />
+
+        <Button
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="160dp"
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ảnh 1" />
+
+        <Button
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="160dp"
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ảnh 2" />
+
+        <Button
+            android:layout_marginTop="290dp"
+            android:layout_marginStart="30dp"
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ảnh 3" />
+
+        <Button
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="290dp"
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ảnh 4" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:text="ICON NÀO LÀ BẬT/TẮT CAMERA ?"
+            android:textSize="20dp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
