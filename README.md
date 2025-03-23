@@ -102,7 +102,12 @@
   <img src="images/IntentLogin1.png" width="900px" height="500px"/>
   <img src="images/IntentLogin2.png" width="900px" height="500px"/>
 </p> 
-
+<h2>Ex7: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/IntentLogin_LuyenTapVoiFigma" alt="AddSubMulDiv_Var">IntentLogin_LuyenTapWithFigma</a>  </h2>
+<p align="center">
+  <img src="images/loginIntent.png" width="900px" height="500px"/>
+   <img src="images/loginIntent1.png" width="900px" height="500px"/>
+   <img src="images/LoginIntent2.png" width="900px" height="500px"/>
+</p> 
 <h2>Ex8: <a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/Landing%20page%20Figma" alt="AddSubMulDiv_Var">Landing page Figma</a>  </h2>
 <p align="center">
   <img src="images/TextFigma.jpg" width="900px" height="500px"/>
