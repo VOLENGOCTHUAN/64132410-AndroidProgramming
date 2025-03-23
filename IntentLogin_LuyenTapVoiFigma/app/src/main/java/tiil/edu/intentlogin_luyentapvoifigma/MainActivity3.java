@@ -33,7 +33,7 @@ TextView tennguoidung;
         anh2=findViewById(R.id.btn2);
         anh3=findViewById(R.id.btn3);
         anh4=findViewById(R.id.btn4);
-        tennguoidung = findViewById(R.id.edtUserName);
+        tennguoidung = findViewById(R.id.tvUserName);
 
         Intent login = getIntent();
         String ten = login.getStringExtra("username");

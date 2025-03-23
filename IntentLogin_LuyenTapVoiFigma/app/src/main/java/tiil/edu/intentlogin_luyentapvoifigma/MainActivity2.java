@@ -42,7 +42,6 @@ public class MainActivity2 extends AppCompatActivity {
                     in.putExtra("password", "123456");
                     in.putExtra("email", "thuan.vln.64cntt@ntu.edu.vn");
                     startActivity(in);
-                    finish();
                 }
                 else{
                     username.setError("Sai tên đăng nhập");

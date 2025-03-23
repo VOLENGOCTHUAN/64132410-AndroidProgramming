@@ -1,8 +1,12 @@
 package tiil.edu.ex7_intentlogin;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,7 +15,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity3 extends AppCompatActivity {
-TextView tvUserName;
+    Button anh1,anh2,anh3,anh4;
+    TextView tennguoidung;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,10 +28,42 @@ TextView tvUserName;
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        tvUserName = findViewById(R.id.tvUserName);
+
+        anh1=findViewById(R.id.btn1);
+        anh2=findViewById(R.id.btn2);
+        anh3=findViewById(R.id.btn3);
+        anh4=findViewById(R.id.btn4);
+        tennguoidung = findViewById(R.id.tvUserName);
 
         Intent login = getIntent();
-        String tenDN_NhanDuoc = login.getStringExtra("username");
-        tvUserName.setText(tenDN_NhanDuoc);
+        String ten = login.getStringExtra("username");
+
+        tennguoidung.setText(ten);
+
+
+        anh1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity3.this, "KẾT QUẢ ĐÚNG", Toast.LENGTH_SHORT).show();
+            }
+        });
+        anh2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity3.this, "KẾT QUẢ SAI, VUI LÒNG CHỌN LẠI", Toast.LENGTH_SHORT).show();
+            }
+        });
+        anh3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity3.this, "KẾT QUẢ SAI, VUI LÒNG CHỌN LẠI", Toast.LENGTH_SHORT).show();
+            }
+        });
+        anh4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity3.this, "KẾT QUẢ SAI, VUI LÒNG CHỌN LẠI", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
