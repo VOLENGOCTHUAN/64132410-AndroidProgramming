@@ -94,6 +94,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="204dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:text="QUIZ"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/edtKq"
         android:layout_width="124dp"
         android:layout_height="93dp"

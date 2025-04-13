@@ -29,13 +29,9 @@ public class MainActivity4 extends AppCompatActivity {
         });
         recyclerView = findViewById(R.id.recyclerview);
         List<Item> items = new ArrayList<>();
-        items.add(new Item(R.drawable.mememeo1,"Ảnh mèo 1","12/12/2022"));
-        items.add(new Item(R.drawable.mememeo2,"Ảnh mèo 2","12/2/2022"));
-        items.add(new Item(R.drawable.mememeo3,"Ảnh mèo 3","12/3/2022"));
-        items.add(new Item(R.drawable.mememeo4,"Ảnh mèo 4","12/4/2022"));
-        items.add(new Item(R.drawable.mememeo5,"Ảnh mèo 5","12/5/2022"));
-        items.add(new Item(R.drawable.mememeo6,"Ảnh mèo 6","12/6/2022"));
-
+        items.add(new Item(R.drawable.anh1,"Ảnh 1","12/12/2022"));
+        items.add(new Item(R.drawable.anh2,"Ảnh 2","12/2/2022"));
+        items.add(new Item(R.drawable.anh3,"Ảnh 3","12/3/2022"));
 
 
 
