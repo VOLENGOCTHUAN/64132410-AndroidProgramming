@@ -112,3 +112,7 @@
 <p align="center">
   <img src="images/TextFigma.jpg" width="900px" height="500px"/>
 </p> 
+<h2><a href="https://github.com/VOLENGOCTHUAN/64132410-AndroidProgramming/tree/main/Test_Fragment_Static" alt="AddSubMulDiv_Var">Test_Fragment_Static</a>  </h2>
+<p align="center">
+  <img src="images/Fragment_Static.jpg" width="900px" height="500px"/>
+</p> 
