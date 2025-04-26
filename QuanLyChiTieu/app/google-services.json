@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "48136609858",
+    "project_id": "androidprojects-f9496",
+    "storage_bucket": "androidprojects-f9496.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48136609858:android:efef443ee8fd8b719e8ddb",
+        "android_client_info": {
+          "package_name": "tiil.edu.quanlychitieu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbwYz0Gt2R37ckI6KdXb_5pQCVL6HlwY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
