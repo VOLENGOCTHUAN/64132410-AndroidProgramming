@@ -13,6 +13,24 @@
         android:theme="@style/Theme.Project_QuizzAppMatchGrade3"
         tools:targetApi="31">
         <activity
+            android:name=".ThuThachActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TroChoiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DocSachActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BangCuuChuongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

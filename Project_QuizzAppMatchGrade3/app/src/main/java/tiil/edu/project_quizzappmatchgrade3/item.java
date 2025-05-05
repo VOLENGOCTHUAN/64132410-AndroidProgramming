@@ -1,6 +1,8 @@
 package tiil.edu.project_quizzappmatchgrade3;
 
-public class item {
+import java.io.Serializable;
+
+public class item implements Serializable {
     String name, chuthich;
     int image;
 
