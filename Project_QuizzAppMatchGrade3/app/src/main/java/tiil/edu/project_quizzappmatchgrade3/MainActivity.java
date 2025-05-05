@@ -28,11 +28,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerview);
 
         List<item> items = new ArrayList<>();
-        items.add(new item("Đề kiểm tra","Kiểm tra cấp độ","123",R.drawable.thuthach));
-        items.add(new item("Đề kiểm tra","Kiểm tra cấp độ","123",R.drawable.dekiemtra));
-        items.add(new item("Bảng cửu chương","Em đã thuộc?","123",R.drawable.img_1));
-        items.add(new item("Đọc sách","Nâng tầm kiến thức","123",R.drawable.docsach));
-        items.add(new item("Trò chơi","Nâng cao trí tuệ, giải trí","123",R.drawable.img));
+        items.add(new item("Đề kiểm tra","Hãy trả lời đúng tất cả",R.drawable.thuthach));
+        items.add(new item("Đề kiểm tra","Kiểm tra cấp độ",R.drawable.dekiemtra));
+        items.add(new item("Bảng cửu chương","Em đã thuộc?",R.drawable.img_1));
+        items.add(new item("Đọc sách","Nâng tầm kiến thức",R.drawable.docsach));
+        items.add(new item("Trò chơi","Nâng cao trí tuệ, giải trí",R.drawable.img));
 
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

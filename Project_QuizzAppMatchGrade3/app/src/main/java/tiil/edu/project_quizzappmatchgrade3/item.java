@@ -4,7 +4,7 @@ public class item {
     String name, chuthich;
     int image;
 
-    public item(String name, String email, String phone, int image) {
+    public item(String name, String chuthich, int image) {
         this.name = name;
         this.chuthich = chuthich;
         this.image = image;
@@ -18,14 +18,13 @@ public class item {
         this.name = name;
     }
 
-    public String getEmail() {
+    public String getChuthich() {
         return chuthich;
     }
 
-    public void setEmail(String email) {
-        this.chuthich = email;
+    public void setChuthich(String chuthich) {
+        this.chuthich = chuthich;
     }
-
 
     public int getImage() {
         return image;

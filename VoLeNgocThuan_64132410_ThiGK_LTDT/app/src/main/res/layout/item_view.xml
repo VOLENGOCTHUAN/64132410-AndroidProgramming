@@ -13,11 +13,12 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:layout_marginTop="120dp"
         android:id="@+id/tvName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
         android:text="Name" />
+
     <TextView
         android:layout_marginTop="150dp"
         android:id="@+id/tvTime"

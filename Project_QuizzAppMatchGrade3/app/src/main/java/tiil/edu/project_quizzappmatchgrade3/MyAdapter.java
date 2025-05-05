@@ -28,7 +28,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.imageView.setImageResource(items.get(position).getImage());
         holder.tvname.setText(items.get(position).getName());
-        holder.tvchuthich.setText(items.get(position).getEmail());
+        holder.tvchuthich.setText(items.get(position).getChuthich());
     }
 
     @Override
