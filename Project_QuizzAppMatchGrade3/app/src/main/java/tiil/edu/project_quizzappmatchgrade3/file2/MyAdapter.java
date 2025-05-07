@@ -1,19 +1,23 @@
-package tiil.edu.project_quizzappmatchgrade3;
+package tiil.edu.project_quizzappmatchgrade3.file2;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+
+import tiil.edu.project_quizzappmatchgrade3.R;
+import tiil.edu.project_quizzappmatchgrade3.file1.BangCuuChuongActivity;
+import tiil.edu.project_quizzappmatchgrade3.file1.ThuThachActivity;
+import tiil.edu.project_quizzappmatchgrade3.file1.TroChoiActivity;
+import tiil.edu.project_quizzappmatchgrade3.file1.QuizActivity; // Giả sử Q là QuizActivity
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.UserViewHolder> {
     private Context context;
@@ -31,64 +35,46 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.UserViewHolder> {
         return new UserViewHolder(view);
     }
 
-    //Gán giá trị cho từng item
     @Override
     public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
         item item = items.get(position);
-        if(item == null){
-            return;
-        }
+        if (item == null) return;
+
         holder.tvname.setText(item.getName());
         holder.tvchuthich.setText(item.getChuthich());
         holder.imageView.setImageResource(item.getImage());
-        holder.layoutItem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onClickGoToDetail(item);
-            }
-        });
+
+        holder.layoutItem.setOnClickListener(v -> onClickGoToDetail(item));
     }
 
-    //Chuyển sang trang chi tiết
     private void onClickGoToDetail(item item) {
+        String name = item.getName().trim();
         Intent intent;
-        switch (item.getName()) {
-            case "Đề kiểm tra":
-                intent = new Intent(context, QuizActivity.class);
-                break;
-            case "Bảng cửu chương":
-                intent = new Intent(context, BangCuuChuongActivity.class);
-                break;
-            case "Đọc sách":
-                intent = new Intent(context, DocSachActivity.class);
-                break;
-            case "Trò chơi":
-                intent = new Intent(context, TroChoiActivity.class);
-                break;
-            case "Thử thách":
-                intent = new Intent(context, ThuThachActivity.class);
-                break;
-            default:
-                intent = new Intent(context, DetailActivity.class); // fallback nếu chưa gán đúng
+
+        if (name.equals("Bài kiểm tra")) {
+            intent = new Intent(context, QuizActivity.class);
+        } else if (name.equals("Bảng cửu chương")) {
+            intent = new Intent(context, BangCuuChuongActivity.class);
+        } else if (name.equals("Chế độ")) {
+            intent = new Intent(context, TroChoiActivity.class);
+        } else if (name.equals("Cài đặt")) {
+            intent = new Intent(context, ThuThachActivity.class);
+        } else {
+            intent = new Intent(context, DetailActivity.class); // fallback
         }
 
         context.startActivity(intent);
     }
 
-
     @Override
     public int getItemCount() {
-        if (items != null){
-            return items.size();
-        }
-        return 0;
+        return (items != null) ? items.size() : 0;
     }
 
-    //Khai báo các thành phần trong item
-    public class UserViewHolder extends RecyclerView.ViewHolder {
-        private ImageView imageView;
-        private TextView tvname, tvchuthich;
-        private View layoutItem;
+    public static class UserViewHolder extends RecyclerView.ViewHolder {
+        private final ImageView imageView;
+        private final TextView tvname, tvchuthich;
+        private final View layoutItem;
 
         public UserViewHolder(@NonNull View itemView) {
             super(itemView);

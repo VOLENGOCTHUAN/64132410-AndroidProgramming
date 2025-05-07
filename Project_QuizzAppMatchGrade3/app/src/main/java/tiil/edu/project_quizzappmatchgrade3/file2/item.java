@@ -1,4 +1,4 @@
-package tiil.edu.project_quizzappmatchgrade3;
+package tiil.edu.project_quizzappmatchgrade3.file2;
 
 import java.io.Serializable;
 
@@ -13,26 +13,32 @@ public class item implements Serializable {
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public String getChuthich() {
+
         return chuthich;
     }
 
     public void setChuthich(String chuthich) {
+
         this.chuthich = chuthich;
     }
 
     public int getImage() {
+
         return image;
     }
 
     public void setImage(int image) {
+
         this.image = image;
     }
 }

@@ -1,4 +1,4 @@
-package tiil.edu.project_quizzappmatchgrade3;
+package tiil.edu.project_quizzappmatchgrade3.file1;
 
 import android.os.Bundle;
 
@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import tiil.edu.project_quizzappmatchgrade3.R;
 
 public class ThuThachActivity extends AppCompatActivity {
 

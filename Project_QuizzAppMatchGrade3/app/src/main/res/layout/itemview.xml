@@ -4,35 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layout_item"
     android:layout_width="300dp"
-    android:layout_height="150dp"
+    android:layout_height="160dp"
     android:layout_marginStart="50dp"
     android:layout_marginTop="10dp">
 
     <TextView
         android:id="@+id/tvname"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="146dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="48dp"
         android:text="Name"
         android:textColor="#E00F52"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvchuthich"
-        android:layout_width="145dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="124dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="84dp"
         android:text="Chú thích"
         android:textColor="#7F1094"
         android:textSize="13dp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

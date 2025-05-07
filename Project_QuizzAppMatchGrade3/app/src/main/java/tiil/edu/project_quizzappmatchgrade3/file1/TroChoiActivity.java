@@ -1,4 +1,4 @@
-package tiil.edu.project_quizzappmatchgrade3;
+package tiil.edu.project_quizzappmatchgrade3.file1;
 
 import android.os.Bundle;
 
@@ -8,13 +8,15 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class DocSachActivity extends AppCompatActivity {
+import tiil.edu.project_quizzappmatchgrade3.R;
+
+public class TroChoiActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_doc_sach);
+        setContentView(R.layout.activity_tro_choi);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
