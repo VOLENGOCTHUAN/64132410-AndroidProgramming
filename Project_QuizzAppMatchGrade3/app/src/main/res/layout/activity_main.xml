@@ -8,37 +8,55 @@
     tools:context=".file1.MainActivity">
 
     <TextView
-        android:gravity="center_horizontal"
+        android:textStyle="bold"
         android:id="@+id/textView"
-        android:layout_width="250dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="295dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center_horizontal"
         android:text="Welcome to"
+        android:textColor="#FF9800"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:gravity="center_horizontal"
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="272dp"
-        android:text="Châm ngôn: Học, học nữa, học mãi"
-        android:textSize="15dp"
+        android:layout_width="324dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="316dp"
+        android:gravity="center_horizontal"
+        android:text="Các chức năng chính"
+        android:textColor="#E44A3A"
+        android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="203dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:text="HỌC, HỌC NỮA, HỌC MÃI"
+        android:textColor="#F44336"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="178dp"
-        android:layout_height="196dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="247dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/sachtoanlop3" />

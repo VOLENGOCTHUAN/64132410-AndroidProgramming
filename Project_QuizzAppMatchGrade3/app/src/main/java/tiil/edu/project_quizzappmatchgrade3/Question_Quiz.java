@@ -45,18 +45,22 @@ public class Question_Quiz {
     }
 
     public String getAnswer4() {
+
         return answer4;
     }
 
     public void setAnswer4(String answer4) {
+
         this.answer4 = answer4;
     }
 
     public String getCorrectAnswer() {
+
         return correctAnswer;
     }
 
     public void setCorrectAnswer(String correctAnswer) {
+
         this.correctAnswer = correctAnswer;
     }
 }
