@@ -1,106 +1,232 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@drawable/quizball2">
 
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="247dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="68dp"
+            android:text="ANSWER MY QUESTIONS"
+            android:textColor="#3F51B5"
+            android:textSize="20dp"
+            android:textStyle="italic|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgQuayLai3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/anh4" />
+
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="375dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="152dp"
+            android:background="@drawable/anh9"
+            android:gravity="center"
+            android:text="Câu hỏi"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tvSoCauDung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✅ Đúng: 0"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/questionText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tvSoCauSai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="❌ Sai: 0"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/questionText"
+            app:layout_constraintStart_toEndOf="@id/tvSoCauDung"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tvDiemSo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎯 Điểm: 0/5"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/questionText"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+    <!-- Hiển thị kết quả "Đạt" hoặc "Chưa đạt" -->
     <TextView
-        android:id="@+id/questionText"
-        android:layout_width="0dp"
+        android:id="@+id/tvKetQua"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Câu hỏi"
-        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="22sp"
         android:textStyle="bold"
-        android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp"/>
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/questionText"
+        app:layout_constraintStart_toStartOf="@+id/questionText"
+        app:layout_constraintTop_toTopOf="@+id/questionText" />
 
-    <!-- Đáp án 1 -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="8dp"
-        app:layout_constraintTop_toBottomOf="@id/questionText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp">
+        <!-- Các card đáp án -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvSoCauDung"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="8dp">
+
+            <TextView
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Đáp án 1"
+                android:textSize="18sp"
+                android:gravity="center"
+                />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/card1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp">
+
+            <TextView
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Đáp án 2"
+                android:textSize="18sp"
+                android:gravity="center"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/card2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp">
+
+            <TextView
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Đáp án 3"
+                android:textSize="18sp"
+                android:gravity="center"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/card3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp">
+
+            <TextView
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Đáp án 4"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="226dp"
+            android:layout_height="191dp"
+            android:layout_marginTop="800dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/anh6" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="190dp"
+            android:layout_height="203dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="236dp"
+            android:layout_marginBottom="112dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card4"
+            app:layout_constraintVertical_bias="0.1"
+            app:srcCompat="@drawable/anh8" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="225dp"
+            android:layout_height="184dp"
+            android:layout_marginStart="178dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/questionText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imgQuayLai3"
+            app:srcCompat="@drawable/anh8" />
 
         <TextView
-            android:id="@+id/answer1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Đáp án 1"
-            android:textSize="18sp"
-            android:gravity="center"/>
-    </com.google.android.material.card.MaterialCardView>
+            android:id="@+id/textView6"
+            android:layout_width="247dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="96dp"
+            android:text="Trả lời câu hỏi bằng cách chọn đáp án đúng"
+            android:textColor="#E91E63"
+            android:textSize="20dp"
+            android:textStyle="italic|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Đáp án 2 -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="8dp"
-        app:layout_constraintTop_toBottomOf="@id/card1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp">
-
-        <TextView
-            android:id="@+id/answer2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Đáp án 2"
-            android:textSize="18sp"
-            android:gravity="center"/>
-    </com.google.android.material.card.MaterialCardView>
-
-    <!-- Đáp án 3 -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="8dp"
-        app:layout_constraintTop_toBottomOf="@id/card2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp">
-
-        <TextView
-            android:id="@+id/answer3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Đáp án 3"
-            android:textSize="18sp"
-            android:gravity="center"/>
-    </com.google.android.material.card.MaterialCardView>
-
-    <!-- Đáp án 4 -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="8dp"
-        app:layout_constraintTop_toBottomOf="@id/card3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp">
-
-        <TextView
-            android:id="@+id/answer4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Đáp án 4"
-            android:textSize="18sp"
-            android:gravity="center"/>
-    </com.google.android.material.card.MaterialCardView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

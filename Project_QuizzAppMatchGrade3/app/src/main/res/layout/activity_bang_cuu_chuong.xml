@@ -5,74 +5,161 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/quizball2"
     tools:context=".file1.BangCuuChuongActivity">
 
-    <!-- CardView chứa bảng cửu chương -->
-
-    <EditText
-        android:id="@+id/edtNhap"
-        android:layout_width="310dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="140dp"
-        android:hint="Nhập số cần tra"
-        android:inputType="number"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+    <!-- Nút quay lại -->
     <ImageView
-        android:id="@+id/imgClick"
-        android:layout_width="213dp"
-        android:layout_height="117dp"
-        android:layout_marginTop="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edtNhap"
-        app:srcCompat="@drawable/img_1" />
-
-    <TextView
-        android:id="@+id/tvkq"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="444dp"
-        android:gravity="center_horizontal"
-        android:hint="kết quả hiển thị"
-        android:lineSpacingExtra="4dp"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/imgQuayLai2"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="16dp"
+        android:contentDescription="Quay lại"
+        app:srcCompat="@drawable/anh4"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/tvTieuDe"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="384dp"
-        android:gravity="center"
-        android:paddingBottom="8dp"
-        android:text="Bảng cửu chương nhân"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+    <!-- Tiêu đề -->
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="397dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="72dp"
-        android:gravity="center_horizontal"
-        android:text="TRA CỨU BẢNG CỬU CHƯƠNG NHÂN"
-        android:textColor="#E63962"
-        android:textSize="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="BẢNG TRA CỨU CỘNG - TRỪ - NHÂN - CHIA"
+        android:textColor="#FFD700"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Spinner chọn bảng cửu chương -->
+    <Spinner
+        android:id="@+id/spinnerSo"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#BFFF00"
+        android:popupBackground="#FFFFFF"
+        android:spinnerMode="dropdown"
+        android:padding="12dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Nút Xem bảng -->
+    <Button
+        android:id="@+id/imgClick"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/rounded_button"
+        android:elevation="4dp"
+        android:paddingHorizontal="24dp"
+        android:text="XEM BẢNG"
+        android:textAllCaps="false"
+        android:textColor="#FFA07A"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerSo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ScrollView hiển thị nội dung -->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/imgClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FAFAFA"
+            android:elevation="4dp">
+
+            <!-- Hàng 1: Cộng + Trừ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/tvCong"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="➕ Bảng cộng"
+                    android:textColor="#4CAF50"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#E8F5E9" />
+
+                <TextView
+                    android:id="@+id/tvTru"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="➖ Bảng trừ"
+                    android:textColor="#F44336"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#FFEBEE"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Hàng 2: Nhân + Chia -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvNhan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="✖️ Bảng nhân"
+                    android:textColor="#FF9800"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#FFF3E0" />
+
+                <TextView
+                    android:id="@+id/tvChia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="➗ Bảng chia"
+                    android:textColor="#3F51B5"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#E8EAF6"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

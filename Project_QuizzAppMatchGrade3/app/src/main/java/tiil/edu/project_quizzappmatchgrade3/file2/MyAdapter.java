@@ -14,9 +14,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import tiil.edu.project_quizzappmatchgrade3.R;
+
+import tiil.edu.project_quizzappmatchgrade3.file1.TuDoLuyenTapActivity;
 import tiil.edu.project_quizzappmatchgrade3.file1.BangCuuChuongActivity;
 import tiil.edu.project_quizzappmatchgrade3.file1.ThuThachActivity;
-import tiil.edu.project_quizzappmatchgrade3.file1.TroChoiActivity;
 import tiil.edu.project_quizzappmatchgrade3.file1.QuizActivity; // Giả sử Q là QuizActivity
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.UserViewHolder> {
@@ -43,7 +44,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.UserViewHolder> {
         holder.tvname.setText(item.getName());
         holder.tvchuthich.setText(item.getChuthich());
         holder.imageView.setImageResource(item.getImage());
-
         holder.layoutItem.setOnClickListener(v -> onClickGoToDetail(item));
     }
 
@@ -51,14 +51,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.UserViewHolder> {
         String name = item.getName().trim();
         Intent intent;
 
-        if (name.equals("Bài kiểm tra")) {
+        if (name.equals("Bài tập theo chương")) {
             intent = new Intent(context, QuizActivity.class);
         } else if (name.equals("Bảng cửu chương")) {
             intent = new Intent(context, BangCuuChuongActivity.class);
-        } else if (name.equals("Chế độ")) {
-            intent = new Intent(context, TroChoiActivity.class);
-        } else if (name.equals("Cài đặt")) {
+        } else if (name.equals("Thử thách")) {
             intent = new Intent(context, ThuThachActivity.class);
+        }else if (name.equals("Tự do luyện tập")) {
+            intent = new Intent(context, TuDoLuyenTapActivity.class);
         } else {
             intent = new Intent(context, DetailActivity.class); // fallback
         }

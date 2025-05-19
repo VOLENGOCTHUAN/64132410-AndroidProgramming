@@ -2,15 +2,20 @@ package tiil.edu.project_quizzappmatchgrade3.file1;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import tiil.edu.project_quizzappmatchgrade3.GiaoDienQuiz;
+
 import tiil.edu.project_quizzappmatchgrade3.R;
 
 public class QuizActivity extends AppCompatActivity {
 
-    MaterialCardView card1, card2, card3, cardNangCao;
+    MaterialCardView card1, card2, card3, cardNangCao,cardChia;
+    ImageView btnQuayLai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,13 +26,23 @@ public class QuizActivity extends AppCompatActivity {
         card1 = findViewById(R.id.card1);
         card2 = findViewById(R.id.card2);
         card3 = findViewById(R.id.card3);
+        cardChia = findViewById(R.id.cardChia);
         cardNangCao = findViewById(R.id.cardNangCao);
+
 
         // Sự kiện click cho mỗi card
         card1.setOnClickListener(v -> openChapter(1));
         card2.setOnClickListener(v -> openChapter(2));
         card3.setOnClickListener(v -> openChapter(3));
-        cardNangCao.setOnClickListener(v -> openChapter(4));
+        cardChia.setOnClickListener(v -> openChapter(4));
+        cardNangCao.setOnClickListener(v -> openChapter(5));
+        btnQuayLai = findViewById(R.id.imgQuayLai5);
+        btnQuayLai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish(); // Quay lại activity trước đó
+            }
+        });
     }
 
     private void openChapter(int chapterNumber) {
@@ -48,4 +63,7 @@ public class QuizActivity extends AppCompatActivity {
                 })
                 .show();
     }
+
+
+
 }

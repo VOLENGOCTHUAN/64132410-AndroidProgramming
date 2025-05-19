@@ -1,4 +1,4 @@
-package tiil.edu.project_quizzappmatchgrade3.file2;
+package tiil.edu.project_quizzappmatchgrade3.file1;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,6 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 import tiil.edu.project_quizzappmatchgrade3.R;
-import tiil.edu.project_quizzappmatchgrade3.file1.MainActivity;
 
 public class quizz_xuat_hien extends AppCompatActivity {
     @Override

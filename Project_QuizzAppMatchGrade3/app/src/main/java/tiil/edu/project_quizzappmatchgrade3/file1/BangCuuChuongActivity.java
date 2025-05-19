@@ -3,66 +3,92 @@ package tiil.edu.project_quizzappmatchgrade3.file1;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
 import java.util.ArrayList;
+import java.util.List;
 
 import tiil.edu.project_quizzappmatchgrade3.R;
 
 public class BangCuuChuongActivity extends AppCompatActivity {
+        Spinner spinnerSo;
+        Button imgClick;
+        TextView tvCong, tvTru, tvNhan, tvChia;
+        ImageView btnQuayLai;
 
-    ImageView imgClick;
-    EditText edtNhap;
-    TextView tvKetQua;
-    TextView tvTieuDe;
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            EdgeToEdge.enable(this);
+            setContentView(R.layout.activity_bang_cuu_chuong);
 
-    @SuppressLint("MissingInflatedId")
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_bang_cuu_chuong);
+            spinnerSo = findViewById(R.id.spinnerSo);
+            imgClick = findViewById(R.id.imgClick);
+            tvCong = findViewById(R.id.tvCong);
+            tvTru = findViewById(R.id.tvTru);
+            tvNhan = findViewById(R.id.tvNhan);
+            tvChia = findViewById(R.id.tvChia);
+            btnQuayLai = findViewById(R.id.imgQuayLai2);
 
-        imgClick = findViewById(R.id.imgClick);
-        edtNhap = findViewById(R.id.edtNhap);
-        tvKetQua = findViewById(R.id.tvkq);
-        tvTieuDe = findViewById(R.id.tvTieuDe);
-
-
-        imgClick.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                tvKetQua.setText(""); // Xóa kết quả cũ
-
-                // Lấy số nhập vào
-                String input = edtNhap.getText().toString().trim();
-                if (input.isEmpty()) {
-                    tvKetQua.setText("Vui lòng nhập số.");
-                    tvTieuDe.setText("Bảng cửu chương nhân ");
-                    return;
+            btnQuayLai.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    finish(); // Quay lại activity trước đó
                 }
-                try {
-                    int so = Integer.parseInt(input);
-                    tvTieuDe.setText("Bảng cửu chương nhân " + so);
+            });
 
-                    StringBuilder ketQua = new StringBuilder();
+            // Gán danh sách số 1-10 cho spinner
+            List<Integer> listSo = new ArrayList<>();
+            for (int i = 1; i <= 10; i++) listSo.add(i);
+            ArrayAdapter<Integer> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, listSo);
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            spinnerSo.setAdapter(adapter);
+
+            imgClick.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int so = (int) spinnerSo.getSelectedItem();
+
+                    // Bảng cộng
+                    StringBuilder cong = new StringBuilder("➕ Bảng cộng " + so + ":\n");
                     for (int i = 1; i <= 10; i++) {
-                        ketQua.append(so).append(" x ").append(i).append(" = ").append(so * i);
-                        if (i != 10) ketQua.append(" \n ");
+                        cong.append(so).append(" + ").append(i).append(" = ").append(so + i).append("\n");
                     }
 
-                    // Hiển thị kết quả
-                    tvKetQua.setText(ketQua.toString());
-                } catch (NumberFormatException e) {
-                    tvKetQua.setText("Giá trị nhập không hợp lệ.");
-                    tvTieuDe.setText("Bảng cửu chương nhân");
+                    // Bảng trừ
+                    StringBuilder tru = new StringBuilder("➖ Bảng trừ " + so + ":\n");
+                    for (int i = 1; i <= 10; i++) {
+                        tru.append((so + i)).append(" - ").append(so).append(" = ").append(i).append("\n");
+                    }
+
+                    // Bảng nhân
+                    StringBuilder nhan = new StringBuilder("✖️ Bảng nhân " + so + ":\n");
+                    for (int i = 1; i <= 10; i++) {
+                        nhan.append(so).append(" x ").append(i).append(" = ").append(so * i).append("\n");
+                    }
+
+                    // Bảng chia
+                    StringBuilder chia = new StringBuilder("➗ Bảng chia " + so + ":\n");
+                    for (int i = 1; i <= 10; i++) {
+                        int tich = so * i;
+                        chia.append(tich).append(" ÷ ").append(so).append(" = ").append(i).append("\n");
+                    }
+
+                    tvCong.setText(cong.toString());
+                    tvTru.setText(tru.toString());
+                    tvNhan.setText(nhan.toString());
+                    tvChia.setText(chia.toString());
                 }
-            }
-        });
+            });
+        }
     }
-}

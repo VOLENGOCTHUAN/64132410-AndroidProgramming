@@ -1,4 +1,4 @@
-package tiil.edu.project_quizzappmatchgrade3;
+package tiil.edu.project_quizzappmatchgrade3.file2;
 
 public class Question_Quiz {
     String questions, answer1, answer2, answer3, answer4, correctAnswer;
@@ -13,6 +13,7 @@ public class Question_Quiz {
     }
 
     public String getQuestions() {
+
         return questions;
     }
 

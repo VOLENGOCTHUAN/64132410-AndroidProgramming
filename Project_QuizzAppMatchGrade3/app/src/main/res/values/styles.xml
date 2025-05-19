@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">#E3F2FD</item> <!-- nền nhẹ xanh (matching bg) -->
+        <item name="boxStrokeColor">#1565C0</item> <!-- màu viền khi focus (xanh đậm) -->
+        <item name="boxStrokeWidth">1dp</item> <!-- viền thường -->
+        <item name="boxStrokeWidthFocused">3dp</item> <!-- viền khi focus -->
+        <item name="hintTextColor">@color/hint_selector</item> <!-- hint dynamic -->
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+    </style>
+</resources>

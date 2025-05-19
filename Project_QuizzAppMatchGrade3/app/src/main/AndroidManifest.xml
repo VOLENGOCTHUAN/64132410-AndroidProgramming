@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        tools:ignore="WrongManifestParent" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,16 +17,28 @@
         android:theme="@style/Theme.Project_QuizzAppMatchGrade3"
         tools:targetApi="31">
         <activity
+            android:name=".file1.createAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".file1.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".file1.TuDoLuyenTapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".file1.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".file1.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".file1.QuizActivity"
             android:exported="false" />
         <activity
-            android:name=".GiaoDienQuiz"
+            android:name=".file1.GiaoDienQuiz"
             android:exported="false" />
         <activity
             android:name=".file1.ThuThachActivity"
-            android:exported="false" />
-        <activity
-            android:name=".file1.TroChoiActivity"
             android:exported="false" />
         <activity
             android:name=".file1.BangCuuChuongActivity"
@@ -34,7 +50,7 @@
             android:name=".file2.DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".file2.quizz_xuat_hien"
+            android:name=".file1.quizz_xuat_hien"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

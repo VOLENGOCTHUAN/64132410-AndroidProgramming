@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/quizball2">
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvDiemSo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="🎯 Điểm: 0/5"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/questionText" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="247dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="68dp"
+        android:text="ANSWER MY QUESTIONS"
+        android:textColor="#3F51B5"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgQuayLai3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/anh4" />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="389dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/anh9"
+        android:gravity="center"
+        android:text="Câu hỏi"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textColor="@color/design_default_color_background"
+        android:id="@+id/tvSoCauDung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✅ Đúng: 0"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/questionText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:textColor="@color/design_default_color_background"
+        android:id="@+id/tvSoCauSai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="❌ Sai: 0"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/questionText"
+        app:layout_constraintStart_toEndOf="@id/tvSoCauDung"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Các card đáp án -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvSoCauDung"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="8dp">
+
+        <TextView
+            android:id="@+id/answer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Đáp án 1"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/card1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="8dp">
+
+        <TextView
+            android:id="@+id/answer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Đáp án 2"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/card2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="8dp">
+
+        <TextView
+            android:id="@+id/answer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Đáp án 3"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/card3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="8dp">
+
+        <TextView
+            android:id="@+id/answer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Đáp án 4"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="226dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="800dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/anh6" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="190dp"
+        android:layout_height="203dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card4"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/anh8" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="225dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="178dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/questionText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgQuayLai3"
+        app:srcCompat="@drawable/anh8" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="247dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="96dp"
+        android:text="Cùng nhau làm các câu hỏi sau để luyện tập thêm nhé"
+        android:textColor="#E91E63"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

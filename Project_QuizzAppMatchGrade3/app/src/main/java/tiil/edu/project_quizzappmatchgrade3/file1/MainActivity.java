@@ -1,50 +1,85 @@
 package tiil.edu.project_quizzappmatchgrade3.file1;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DividerItemDecoration;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import tiil.edu.project_quizzappmatchgrade3.file2.MyAdapter;
 import tiil.edu.project_quizzappmatchgrade3.R;
-import tiil.edu.project_quizzappmatchgrade3.file2.item;
 
 public class MainActivity extends AppCompatActivity {
-    RecyclerView recyclerView;
-    private MyAdapter myAdapter;
+    Button xacnhan;
+    EditText password, username, email;
+    TextView forgotPassword, createAccount;
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+        xacnhan = findViewById(R.id.btnLogin);
+        password = findViewById(R.id.edtPassword);
+        username = findViewById(R.id.edtUserName);
+        email = findViewById(R.id.edtEmail);
 
-        recyclerView = findViewById(R.id.recyclerview);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(linearLayoutManager);
+        forgotPassword = findViewById(R.id.tvForgotPassword);
+        createAccount = findViewById(R.id.tvCreateAccount);
 
-        //Gán adapter
-        myAdapter = new MyAdapter(this, getListItem());
-        recyclerView.setAdapter(myAdapter);
+        forgotPassword.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ForgotPasswordActivity.class);
+            startActivity(intent);
+        });
 
-        //Gach ngang giua nhung thu muc
-        RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
-        recyclerView.addItemDecoration(itemDecoration);
-    }
+        createAccount.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, createAccountActivity.class);
+            startActivity(intent);
+        });
 
-    //Lay du lieu tu item
-    private List<item> getListItem() {
-        List<item> items = new ArrayList<>();
-        items.add(new item("Bài kiểm tra", "Kiểm tra cấp độ", R.drawable.img_4));
-        items.add(new item("Bảng cửu chương", "Cộng, trừ, nhân, chia. Em đã thuộc?", R.drawable.img));
-        items.add(new item("Chế độ", "", R.drawable.docsach));
-        items.add(new item("Cài đặt", "", R.drawable.img_3));
-        return items;
+        xacnhan.setOnClickListener(v -> {
+            String inputUsername = username.getText().toString().trim();
+            String inputPassword = password.getText().toString().trim();
+            String inputEmail = email.getText().toString().trim();
+
+            SharedPreferences prefs = getSharedPreferences("UserPrefs", MODE_PRIVATE);
+            String savedUsername = prefs.getString("username", "");
+            String savedPassword = prefs.getString("password", "");
+            String savedEmail = prefs.getString("email", "");
+
+            if (inputUsername.equals(savedUsername) &&
+                    inputPassword.equals(savedPassword) &&
+                    inputEmail.equals(savedEmail)) {
+
+                Toast.makeText(MainActivity.this, "Đăng nhập thành công!", Toast.LENGTH_SHORT).show();
+
+                Intent in = new Intent(MainActivity.this, LoginActivity.class);
+                in.putExtra("username", inputUsername);
+                in.putExtra("password", inputPassword);
+                in.putExtra("email", inputEmail);
+                startActivity(in);
+                finish();
+
+            } else {
+                Toast.makeText(MainActivity.this, "Sai tên đăng nhập, mật khẩu hoặc email", Toast.LENGTH_SHORT).show();
+                if (!inputUsername.equals(savedUsername)) {
+                    username.setError("Sai tên đăng nhập");
+                }
+                if (!inputPassword.equals(savedPassword)) {
+                    password.setError("Sai mật khẩu");
+                }
+                if (!inputEmail.equals(savedEmail)) {
+                    email.setError("Sai email");
+                }
+            }
+        });
     }
 }
