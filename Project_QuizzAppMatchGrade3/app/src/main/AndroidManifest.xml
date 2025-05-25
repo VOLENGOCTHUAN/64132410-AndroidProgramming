@@ -17,40 +17,40 @@
         android:theme="@style/Theme.Project_QuizzAppMatchGrade3"
         tools:targetApi="31">
         <activity
-            android:name=".file1.createAccountActivity"
+            android:name=".KetQuaActivity"
             android:exported="false" />
         <activity
-            android:name=".file1.ForgotPasswordActivity"
+            android:name=".UserInfoActivity"
             android:exported="false" />
         <activity
-            android:name=".file1.TuDoLuyenTapActivity"
+            android:name=".ItemChinh.TuDoLuyenTapActivity"
             android:exported="false" />
         <activity
-            android:name=".file1.AboutActivity"
+            android:name=".Item2.AboutActivity"
             android:exported="false" />
         <activity
-            android:name=".file1.LoginActivity"
+            android:name=".Item2.Man_hinh_chinh"
             android:exported="false" />
         <activity
-            android:name=".file1.QuizActivity"
+            android:name=".ItemChinh.QuizActivity"
             android:exported="false" />
         <activity
-            android:name=".file1.GiaoDienQuiz"
+            android:name=".ItemChinh.GiaoDienQuiz"
             android:exported="false" />
         <activity
-            android:name=".file1.ThuThachActivity"
+            android:name=".ItemChinh.ThuThachActivity"
             android:exported="false" />
         <activity
-            android:name=".file1.BangCuuChuongActivity"
+            android:name=".ItemChinh.BangCuuChuongActivity"
             android:exported="false" />
         <activity
-            android:name=".file1.MainActivity"
+            android:name=".DangNhap.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".file2.DetailActivity"
+            android:name=".Item1.DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".file1.quizz_xuat_hien"
+            android:name=".Item2.quizz_xuat_hien"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

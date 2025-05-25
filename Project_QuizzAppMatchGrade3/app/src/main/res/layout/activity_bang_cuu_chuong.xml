@@ -5,63 +5,68 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/quizball2"
-    tools:context=".file1.BangCuuChuongActivity">
+    android:background="@drawable/img_3"
+    tools:context=".ItemChinh.BangCuuChuongActivity">
 
-    <!-- Nút quay lại -->
     <ImageView
         android:id="@+id/imgQuayLai2"
         android:layout_width="36dp"
         android:layout_height="36dp"
         android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/white_box"
         android:contentDescription="Quay lại"
-        app:srcCompat="@drawable/anh4"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:srcCompat="@drawable/img_back" />
 
-    <!-- Tiêu đề -->
     <TextView
+        android:fontFamily="@font/chakrapetchbold"
         android:id="@+id/textView3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_width="276dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/white_box"
         android:gravity="center"
-        android:text="BẢNG TRA CỨU CỘNG - TRỪ - NHÂN - CHIA"
-        android:textColor="#FFD700"
+        android:text="BẢNG TRA CỨU \n CỘNG - TRỪ - NHÂN - CHIA"
+        android:textColor="@color/purple_700"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Spinner chọn bảng cửu chương -->
     <Spinner
+        android:fontFamily="@font/chakrapetchbold"
         android:id="@+id/spinnerSo"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#BFFF00"
+        android:layout_width="330dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/purple_700"
+        android:padding="12dp"
         android:popupBackground="#FFFFFF"
         android:spinnerMode="dropdown"
-        android:padding="12dp"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
 
-    <!-- Nút Xem bảng -->
     <Button
+        android:fontFamily="@font/chakrapetchbold"
         android:id="@+id/imgClick"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:layout_marginHorizontal="16dp"
-        android:background="@drawable/rounded_button"
+        android:background="@drawable/white_box"
         android:elevation="4dp"
         android:paddingHorizontal="24dp"
         android:text="XEM BẢNG"
         android:textAllCaps="false"
-        android:textColor="#FFA07A"
+        android:textColor="#673AB7"
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/spinnerSo"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,6 +103,7 @@
                 android:layout_marginBottom="12dp">
 
                 <TextView
+                    android:fontFamily="@font/chakrapetchbold"
                     android:id="@+id/tvCong"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -111,6 +117,7 @@
                     android:background="#E8F5E9" />
 
                 <TextView
+                    android:fontFamily="@font/chakrapetchbold"
                     android:id="@+id/tvTru"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -133,6 +140,7 @@
                 android:gravity="center">
 
                 <TextView
+                    android:fontFamily="@font/chakrapetchbold"
                     android:id="@+id/tvNhan"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -146,6 +154,7 @@
                     android:background="#FFF3E0" />
 
                 <TextView
+                    android:fontFamily="@font/chakrapetchbold"
                     android:id="@+id/tvChia"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"

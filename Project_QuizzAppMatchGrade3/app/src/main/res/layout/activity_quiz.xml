@@ -5,16 +5,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/quizball2"
-    android:padding="24dp">
+    android:background="@drawable/img_3"
+    android:padding="24dp"
+    tools:context=".ItemChinh.QuizActivity">
 
     <!-- Nút quay lại -->
+
     <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="300dp"
+        android:layout_height="182dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/chu_quiz" />
+
+    <ImageView
+        android:background="@drawable/white_box"
         android:id="@+id/imgQuayLai5"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:contentDescription="Quay lại"
-        app:srcCompat="@drawable/anh4"
+        app:srcCompat="@drawable/img_back"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -24,18 +37,18 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_width="325dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/chakrapetchbold"
         android:gravity="center"
-        android:text="Các chương luyện tập tính toán"
-        android:textColor="#3F51B5"
-        android:textSize="25sp"
+        android:text="Các chương tính toán"
+        android:textColor="@color/black"
+        android:textSize="22sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgQuayLai5" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card1"
@@ -50,9 +63,11 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
+            android:background="@drawable/white_box"
             android:id="@+id/btnChuong1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/chakrapetchbold"
             android:gravity="center"
             android:padding="20dp"
             android:text="Chương bài tập cộng"
@@ -76,6 +91,8 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
+            android:background="@drawable/white_box"
+            android:fontFamily="@font/chakrapetchbold"
             android:id="@+id/btnChuong2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -102,6 +119,8 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
+            android:background="@drawable/white_box"
+            android:fontFamily="@font/chakrapetchbold"
             android:id="@+id/btnChuong3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -128,6 +147,8 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
+            android:background="@drawable/white_box"
+            android:fontFamily="@font/chakrapetchbold"
             android:id="@+id/btnChia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -153,6 +174,8 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
+            android:background="@drawable/white_box"
+            android:fontFamily="@font/chakrapetchbold"
             android:id="@+id/btnNangCao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

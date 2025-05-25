@@ -6,83 +6,78 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp"
-        android:background="@drawable/quizball2">
+    tools:context=".ItemChinh.GiaoDienQuiz"
+    android:background="@drawable/img_3"
+        >
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="300dp"
+        android:layout_height="182dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvQuestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/chu_quiz" />
 
         <TextView
-            android:id="@+id/textView7"
-            android:layout_width="247dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="68dp"
-            android:text="ANSWER MY QUESTIONS"
-            android:textColor="#3F51B5"
-            android:textSize="20dp"
-            android:textStyle="italic|bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/tvQuestion"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/white_box"
+        android:fontFamily="@font/chakrapetchbold"
+        android:gravity="center"
+        android:text="Câu hỏi"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imgQuayLai3"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/anh4" />
+    <TextView
+        android:id="@+id/tvSoCauDung"
+        android:layout_width="98dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/white_box"
+        android:fontFamily="@font/chakrapetchbold"
+        android:text=" ✅ Đúng: 0"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestion" />
 
-        <TextView
-            android:id="@+id/questionText"
-            android:layout_width="375dp"
-            android:layout_height="108dp"
-            android:layout_marginTop="152dp"
-            android:background="@drawable/anh9"
-            android:gravity="center"
-            android:text="Câu hỏi"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <TextView
-            android:textColor="@color/black"
-            android:id="@+id/tvSoCauDung"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="✅ Đúng: 0"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/questionText"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="8dp"/>
-
-        <TextView
-            android:textColor="@color/black"
-            android:id="@+id/tvSoCauSai"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="❌ Sai: 0"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/questionText"
-            app:layout_constraintStart_toEndOf="@id/tvSoCauDung"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"/>
-
-        <TextView
-            android:textColor="@color/black"
-            android:id="@+id/tvDiemSo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="🎯 Điểm: 0/5"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/questionText"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/tvSoCauSai"
+        android:layout_width="81dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/white_box"
+        android:fontFamily="@font/chakrapetchbold"
+        android:text=" ❌ Sai: 0"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/tvSoCauDung"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestion" />
 
     <!-- Hiển thị kết quả "Đạt" hoặc "Chưa đạt" -->
+    <TextView
+        android:id="@+id/tvDiemSo"
+        android:layout_width="106dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/white_box"
+        android:fontFamily="@font/chakrapetchbold"
+        android:text=" 🎯 Điểm: 0/10"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestion" />
+
     <TextView
         android:id="@+id/tvKetQua"
         android:layout_width="wrap_content"
@@ -92,12 +87,13 @@
         android:textSize="22sp"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="@+id/questionText"
-        app:layout_constraintStart_toStartOf="@+id/questionText"
-        app:layout_constraintTop_toTopOf="@+id/questionText" />
+        app:layout_constraintEnd_toEndOf="@+id/tvQuestion"
+        app:layout_constraintStart_toStartOf="@+id/tvQuestion"
+        app:layout_constraintTop_toTopOf="@+id/tvQuestion" />
 
-        <!-- Các card đáp án -->
-        <com.google.android.material.card.MaterialCardView
+
+
+    <com.google.android.material.card.MaterialCardView
             android:id="@+id/card1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -108,6 +104,7 @@
             app:cardCornerRadius="8dp">
 
             <TextView
+                android:fontFamily="@font/chakrapetchbold"
                 android:id="@+id/answer1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -116,26 +113,6 @@
                 android:textSize="18sp"
                 android:gravity="center"
                 />
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/card2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/card1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp"
-            app:cardCornerRadius="8dp">
-
-            <TextView
-                android:id="@+id/answer2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="Đáp án 2"
-                android:textSize="18sp"
-                android:gravity="center"/>
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
@@ -149,6 +126,7 @@
             app:cardCornerRadius="8dp">
 
             <TextView
+                android:fontFamily="@font/chakrapetchbold"
                 android:id="@+id/answer3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -169,6 +147,7 @@
             app:cardCornerRadius="8dp">
 
             <TextView
+                android:fontFamily="@font/chakrapetchbold"
                 android:id="@+id/answer4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -179,54 +158,38 @@
 
         </com.google.android.material.card.MaterialCardView>
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="226dp"
-            android:layout_height="191dp"
-            android:layout_marginTop="800dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/anh6" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="190dp"
-            android:layout_height="203dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="236dp"
-            android:layout_marginBottom="112dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/card4"
-            app:layout_constraintVertical_bias="0.1"
-            app:srcCompat="@drawable/anh8" />
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="225dp"
-            android:layout_height="184dp"
-            android:layout_marginStart="178dp"
-            android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/questionText"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imgQuayLai3"
-            app:srcCompat="@drawable/anh8" />
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/card1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="8dp">
 
         <TextView
-            android:id="@+id/textView6"
-            android:layout_width="247dp"
-            android:layout_height="74dp"
-            android:layout_marginTop="96dp"
-            android:text="Trả lời câu hỏi bằng cách chọn đáp án đúng"
-            android:textColor="#E91E63"
-            android:textSize="20dp"
-            android:textStyle="italic|bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:fontFamily="@font/chakrapetchbold"
+            android:id="@+id/answer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Đáp án 2"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </com.google.android.material.card.MaterialCardView>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imgQuayLai3"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="840dp"
+        android:background="@drawable/white_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_back" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

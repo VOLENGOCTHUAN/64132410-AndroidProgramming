@@ -5,19 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp"
-    android:background="@drawable/quizball2"
-    tools:context=".file1.ThuThachActivity">
+    android:background="@drawable/img_3"
+    tools:context=".ItemChinh.ThuThachActivity">
 
     <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="300dp"
+        android:layout_height="182dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvCauHoi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/chu_quiz" />
+
+    <ImageView
+        android:fontFamily="@font/chakrapetchbold"
+        android:background="@drawable/white_box"
         android:id="@+id/imgQuayLai"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:contentDescription="Quay lại"
-        android:src="@drawable/anh4"
+        android:src="@drawable/img_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:fontFamily="@font/chakrapetchbold"
         android:id="@+id/tvThoiGian"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,15 +42,16 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:background="@drawable/anh9"
         android:id="@+id/tvCauHoi"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/white_box"
+        android:fontFamily="@font/chakrapetchbold"
         android:gravity="center"
         android:text="Câu hỏi sẽ hiển thị ở đây"
         android:textColor="@color/black"
-        android:textSize="22sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -45,6 +59,7 @@
         app:layout_constraintTop_toBottomOf="@id/tvThoiGian" />
 
     <EditText
+        android:fontFamily="@font/chakrapetchbold"
         android:id="@+id/edtTraLoi"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -60,6 +75,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:fontFamily="@font/chakrapetchbold"
         android:id="@+id/btnKiemTra"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -77,12 +93,13 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
+android:background="@drawable/white_box"
         android:id="@+id/tvKetQua"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Kết quả hiển thị ở đây"
         android:textSize="18sp"
-        android:textColor="#9C27B0"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@id/btnKiemTra"
