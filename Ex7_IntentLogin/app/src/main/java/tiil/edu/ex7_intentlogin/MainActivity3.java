@@ -1,5 +1,7 @@
 package tiil.edu.ex7_intentlogin;
 
+import static android.content.Intent.getIntent;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,11 +25,6 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main3);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
         anh1=findViewById(R.id.btn1);
         anh2=findViewById(R.id.btn2);
